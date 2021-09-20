@@ -2,14 +2,30 @@ import java.util.Scanner;
 
 public class literals {
     public static void main(String[] args) {
-        System.out.println("Take the input from user");
+        int age;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number 1");
-        int a = sc.nextInt();
-        System.out.println("ENTER number 2");
-        int b = sc.nextInt();
-        int sum = a+b;
-        System.out.println("The sum of the number");
-        System.out.println(sum);
+        age = sc.nextInt();
+        switch (age){
+            case 18:
+                System.out.println("ADULT");
+                break;
+            case 21:
+                System.out.println("JOB");
+                break;
+            case 60:
+                System.out.println("RETIRE");
+                break;
+            default:
+                System.out.println("exit");
+        }
+        if (age > 66) {
+            System.out.println("You are Expreinced");
+
+        } else if (age > 55) {
+            System.out.println("you are semi experience");
+        } else {
+            System.out.println("you are not experience");
+        }
     }
 }
+
